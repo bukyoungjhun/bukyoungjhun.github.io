@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var s = localStorage.getItem("theme");
+    var d =
+      s === "dark" ||
+      (!s &&
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+  } catch (e) {}
+})();
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming talk at Seoul National University Data Science Lab — Bukyoung Jhun</title>
+  <meta name="description" content="Bukyoung Jhun&#39;s personal academic website">
+  <meta name="robots" content="index, follow">
+
+
+<link rel="canonical" href="https://bukyoungjhun.github.io/news/2024-11-upcoming-talk-at-seoul-national-university-data-science-lab/index.html">
+
+  
+
+
+  <link rel="icon" href="../../static/images/favicon.png" type="image/png">
+
+  <link rel="shortcut icon" href="../../static/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/site.css">
+  
+<style id="site-theme">
+:root,
+[data-theme="light"] {
+  --color-heading: #1a3d6d;
+  --color-accent: #1a3d6d;
+  --color-link: #5b5957;
+  --text: #333;
+  --text-muted: #898989;
+  --text-sub: #908e8b;
+  --link: #5b5957;
+  --bg-page: #ffffff;
+  --bg-footer: #eeeeee;
+  --bg-highlight: #f5f2ec;
+  --bg-input: #fafafa;
+  --bg-mobile-menu: #efefef;
+  --border: #d4d4d4;
+  --ham-color: #333;
+}
+
+[data-theme="dark"] {
+  --color-heading: #6ba3d8;
+  --color-accent: #6ba3d8;
+  --color-link: #8bb8e8;
+  --text: #c4c8cc;
+  --text-muted: #9aa0a6;
+  --text-sub: #959aa0;
+  --link: #8bb8e8;
+  --bg-page: #1e2126;
+  --bg-footer: #252a2f;
+  --bg-highlight: #2d3138;
+  --bg-input: #2d3138;
+  --bg-mobile-menu: #252a2f;
+  --border: #454a52;
+  --ham-color: #c4c8cc;
+}
+</style>
+  
+</head>
+<body class="">
+  <div class="mobile-menu-wrapper" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="../../news/index.html"
+       aria-current="page">News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../about.html"
+       >About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+      <div class="mobile-menu-toolbar">
+        
+        <button type="button" id="theme-toggle-mobile" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+        
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <header class="mobile-header" aria-label="Mobile navigation">
+    <div class="container mobile-header-inner">
+      <button class="menu-bar" id="menu-toggle" aria-label="Open menu" type="button">
+        <span class="ham"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wrapper" id="main-wrapper">
+    <main class="site-main">
+      <div class="container lab-vc-container">
+        
+        <div class="page-layout">
+          <div class="page-main">
+            
+<section class="page-section news-article">
+    <div class="page-heading">
+      <p class="breadcrumb"><a href="../../news/index.html">News</a></p>
+      <h2 class="head2">Upcoming talk at Seoul National University Data Science Lab</h2>
+      <p class="meta-line">2024-11-08</p>
+    </div>
+    <div class="content-body">
+      <p>I will give an invited talk at Seoul National University Data Science Lab on the topic &ldquo;Network inference from dynamical observations&rdquo;</p>
+    </div>
+</section>
+
+          </div>
+          
+          <aside class="sidebar-nav" aria-label="Site navigation">
+            <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="../../news/index.html"
+       aria-current="page">News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../about.html"
+       >About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+<div class="sidebar-theme">
+  <button type="button" id="theme-toggle" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+</div>
+          </aside>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../static/js/theme.js"></script>
+  <script src="../../static/js/site.js"></script>
+  
+
+
+<!-- Cloudflare Web Analytics -->
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b50843ba521349be9175c04115303ab0"}'></script>
+
+
+
+
+
+<!-- GoatCounter -->
+
+<script data-goatcounter="https://bukyoungjhun.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+
+  
+</body>
+</html>
