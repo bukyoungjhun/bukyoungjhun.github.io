@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var s = localStorage.getItem("theme");
+    var d =
+      s === "dark" ||
+      (!s &&
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+  } catch (e) {}
+})();
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Bukyoung Jhun</title>
+  <meta name="description" content="Bukyoung Jhun&#39;s personal academic website">
+  <meta name="robots" content="index, follow">
+
+
+<link rel="canonical" href="https://bukyoungjhun.github.io/about.html">
+
+  
+
+
+  <link rel="icon" href="static/images/favicon.png" type="image/png">
+
+  <link rel="shortcut icon" href="static/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/site.css">
+  
+<style id="site-theme">
+:root,
+[data-theme="light"] {
+  --color-heading: #1a3d6d;
+  --color-accent: #1a3d6d;
+  --color-link: #5b5957;
+  --text: #333;
+  --text-muted: #898989;
+  --text-sub: #908e8b;
+  --link: #5b5957;
+  --bg-page: #ffffff;
+  --bg-footer: #eeeeee;
+  --bg-highlight: #f5f2ec;
+  --bg-input: #fafafa;
+  --bg-mobile-menu: #efefef;
+  --border: #d4d4d4;
+  --ham-color: #333;
+}
+
+[data-theme="dark"] {
+  --color-heading: #6ba3d8;
+  --color-accent: #6ba3d8;
+  --color-link: #8bb8e8;
+  --text: #c4c8cc;
+  --text-muted: #9aa0a6;
+  --text-sub: #959aa0;
+  --link: #8bb8e8;
+  --bg-page: #1e2126;
+  --bg-footer: #252a2f;
+  --bg-highlight: #2d3138;
+  --bg-input: #2d3138;
+  --bg-mobile-menu: #252a2f;
+  --border: #454a52;
+  --ham-color: #c4c8cc;
+}
+</style>
+  
+</head>
+<body class="">
+  <div class="mobile-menu-wrapper" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="news/index.html"
+       >News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="about.html"
+       aria-current="page">About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+      <div class="mobile-menu-toolbar">
+        
+        <button type="button" id="theme-toggle-mobile" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+        
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <header class="mobile-header" aria-label="Mobile navigation">
+    <div class="container mobile-header-inner">
+      <button class="menu-bar" id="menu-toggle" aria-label="Open menu" type="button">
+        <span class="ham"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wrapper" id="main-wrapper">
+    <main class="site-main">
+      <div class="container lab-vc-container">
+        
+        <div class="page-layout">
+          <div class="page-main">
+            
+<section class="page-section about-page">
+  <div class="page-heading">
+    <h2 class="head2"></h2>
+  </div>
+
+  <div class="about-layout">
+    
+    <div class="about-header">
+      
+      <div class="about-profile">
+        
+        <div class="about-profile-photo-wrap">
+          <img class="about-profile-photo"
+               src="static/images/bukyoungjhun.png"
+               alt="Bukyoung Jhun">
+        </div>
+        
+        
+        
+        <nav class="about-social" aria-label="Social media">
+          
+          <a href="https://scholar.google.com/citations?user=5NXUxDIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar">
+            <img src="static/images/logo_scholar.png"
+                 alt="Google Scholar" width="32" height="32" loading="lazy">
+          </a>
+          
+          <a href="https://linkedin.com/in/bukyoung-jhun-859b332b4" target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn">
+            <img src="static/images/logo_linkedin.png"
+                 alt="LinkedIn" width="32" height="32" loading="lazy">
+          </a>
+          
+          <a href="https://bsky.app/profile/bukyoungjhun.bsky.social" target="_blank" rel="noopener noreferrer"
+             aria-label="Bluesky">
+            <img src="static/images/logo_blusky.png"
+                 alt="Bluesky" width="32" height="32" loading="lazy">
+          </a>
+          
+        </nav>
+        
+      </div>
+      
+
+      
+      <div class="about-intro-block">
+        <h3 class="about-section-title">Biography</h3>
+        <div class="about-intro content-body"><p>My research focuses on the inference and reconstruction of complex networks. I am currently working with Prof. Tiago P. Peixoto on these topics in the Inverse Complexity Lab. I also investigate epidemiological processes in networks and nonequilibrium phase transitions &amp; critical phenomena in complex networks.</p>
+<p>I received my Ph.D. in Physics in August 2023 at Seoul National University with a thesis titled &ldquo;Prediction and control of epidemics and avalanche dynamics in complex networks&rdquo; (supervisor: Prof. Byungnam Kahng).</p></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="about-sections content-body">
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Positions</h3>
+  
+
+  
+  <ul class="cv-timeline">
+    
+    <li>
+      <span class="cv-date">2026.04 – Present</span>
+      <div class="cv-details">
+        <span class="cv-role">Postdoctoral Researcher</span>
+        <span class="cv-org">Center for Critical Computational Studies, Goethe-Universität Frankfurt</span>
+        
+      </div>
+    </li>
+    
+    <li>
+      <span class="cv-date">2024.10 – Present</span>
+      <div class="cv-details">
+        <span class="cv-role">Visiting Researcher</span>
+        <span class="cv-org">Department of Network and Data Science, Central European University</span>
+        
+      </div>
+    </li>
+    
+    <li>
+      <span class="cv-date">2024.10 – 2026.04</span>
+      <div class="cv-details">
+        <span class="cv-role">Postdoctoral Researcher</span>
+        <span class="cv-org">IT:U – Interdisciplinary Transformation University Austria</span>
+        
+      </div>
+    </li>
+    
+    <li>
+      <span class="cv-date">2023.10 – 2024.09</span>
+      <div class="cv-details">
+        <span class="cv-role">Postdoctoral Researcher</span>
+        <span class="cv-org">Department of Network and Data Science, Central European University</span>
+        
+      </div>
+    </li>
+    
+  </ul>
+
+  
+
+  
+</section>
+
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Education</h3>
+  
+
+  
+  <ul class="cv-list">
+    
+    <li><p>Ph.D. in Physics, Seoul National University (2023.08)</p></li>
+    
+    <li><p>M.S. in Physics, Seoul National University (2019.08)</p></li>
+    
+    <li><p>B.S. in Physics (sub-major: Mathematics), Seoul National University (2017.02)</p></li>
+    
+  </ul>
+  
+
+  
+</section>
+
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Awards and Scholarships</h3>
+  
+
+  
+  <ul class="cv-list">
+    
+    <li><p>Gold medal, 40th International Physics Olympiad</p></li>
+    
+    <li><p>Talent Medal of Korea (Presidential Award)</p></li>
+    
+    <li><p>Gyeonggi-do Global Talent Award</p></li>
+    
+    <li><p>Presidential Science Scholarship</p></li>
+    
+    <li><p>Brain Korea 21 Plus Scholarship (multiple awards)</p></li>
+    
+    <li><p>Next Generation Researchers Global Postdoctoral Fellowship (National Research Foundation of Korea)</p></li>
+    
+    <li><p>Young Statistical Physicist Award (Korean Physical Society)</p></li>
+    
+  </ul>
+  
+
+  
+</section>
+
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Journal Publications</h3>
+  
+
+  
+  <ol class="cv-list cv-list--ordered">
+    
+    <li><p>Yongsun Lee, Hoyun Choi, Laurent Pagnier, Cook Hyun Kim, Jongshin Lee, Bukyoung Jhun, Heetae Kim, Jürgen Kurths, B. Kahng, &ldquo;Reinforcement learning optimizes power dispatch in decentralized power grid,&rdquo; <em>Chaos, Solitons &amp; Fractals</em> 186, 115293 (2024).</p></li>
+    
+    <li><p>Minjae Jo, Bukyoung Jhun, B. Kahng, &ldquo;Resolving mean-field solutions of dissipative phase transitions using permutational symmetry,&rdquo; <em>Chaos, Solitons &amp; Fractals</em> 173, 113705 (2023).</p></li>
+    
+    <li><p>Bukyoung Jhun, Hoyun Choi, Yongsun Lee, Jongshin Lee, Cook Hyun Kim, B. Kahng, &ldquo;Prediction and mitigation of nonlocal cascading failures using graph neural networks,&rdquo; <em>Chaos</em> 33 (1), 013115 (2023).</p></li>
+    
+    <li><p>Bukyoung Jhun, Hoyun Choi, &ldquo;Abrupt transition of the efficient vaccination strategy in a population with heterogeneous fatality rates,&rdquo; <em>Chaos</em> 32 (9), 093140 (2022).</p></li>
+    
+    <li><p>Bukyoung Jhun, Minjae Jo, B. Kahng, &ldquo;Quantum contact process on scale-free networks,&rdquo; <em>Chaos, Solitons &amp; Fractals</em> 160, 112262 (2022).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Topological analysis of the latent geometry of a complex network,&rdquo; <em>Chaos</em> 32 (1), 013116 (2022).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Effective epidemic containment strategy in hypergraphs,&rdquo; <em>Phys. Rev. Res.</em> 3 (3), 033282 (2021).</p></li>
+    
+    <li><p>Bukyoung Jhun, Minjae Jo, B. Kahng, &ldquo;Simplicial SIS model in scale-free uniform hypergraph,&rdquo; <em>J. Stat. Mech.: Theory Exp</em> 2019 (12), 123207 (2019).</p></li>
+    
+    <li><p>Bukyoung Jhun, Youngseok Jhun, Seung-wook Kim, JungHyun Han, &ldquo;Numerical Calculation of Non-uniform Magnetization Using Experimental Magnetic Field Data,&rdquo; <em>J. Korean Phys. Soc.</em> 72, 1058 (2018).</p></li>
+    
+    <li><p>Bukyoung Jhun, Cheol-Hwan Park, &ldquo;Electronic structure of charged bilayer and trilayer phosphorene,&rdquo; <em>Phys. Rev. B</em> 96, 085412 (2017).</p></li>
+    
+  </ol>
+
+  
+
+  
+</section>
+
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Invited Talks</h3>
+  
+
+  
+  <ul class="cv-list">
+    
+    <li><p>Bukyoung Jhun, &ldquo;Minimum Description Length-Based Network Reconstruction and the Limitations of Heuristic Methods,&rdquo; Korea Institute of Energy Technology (KENTECH) (2026.06).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Scalable Hyperbolic Embedding and its Applications,&rdquo; KIAS School of Computational Sciences (2026.06).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Network inference from dynamical observations,&rdquo; Seoul National University Data Science Lab (2024.11).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Inference of the underlying network structure from observed dynamics,&rdquo; Complex Systems Research Exchange (2024.11).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Inference of the underlying network structure of dynamical processes,&rdquo; Korea Institute of Energy Technology (KENTECH) Grid Modernization Group Seminar (2024.10).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Inference of macroscopic organization of complex networks via Bayesian approach,&rdquo; Korean Physical Society fall meeting (2024.10).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Inference and reconstruction of latent macroscopic structure in complex networks,&rdquo; KIAS School of Computational Sciences Seminar (2024.03).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Prediction and Control of Epidemics and Avalanche Dynamics in Complex Networks,&rdquo; Complexity Science Hub (CSH) Seminar (2024.02).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Dynamics and control of higher-order epidemics,&rdquo; KIAS-Vermont workshop (2023.03).</p></li>
+    
+    <li><p>Bukyoung Jhun, &ldquo;Topological analysis of latent geometry of complex networks,&rdquo; Workshop on Topological Data Analysis (2023.02).</p></li>
+    
+  </ul>
+  
+
+  
+</section>
+
+      
+      
+<section class="about-section">
+  <h3 class="about-section-title">Professional Services</h3>
+  
+
+  
+  <ul class="cv-list">
+    
+    <li><p>Program Committee Chair (Basic Science), European-Korean Conference on Science and Technology (EKC2026), Toulouse, France (2026.07)</p></li>
+    
+    <li><p>Organizing Committee, Austria–Korea Scientific Collaboration: Past Achievements and Future Prospects (2025.10)</p></li>
+    
+    <li><p>Local Organizing Committee Chair, European-Korean Conference on Science and Technology (EKC2025), Vienna, Austria (2025.08)</p></li>
+    
+  </ul>
+  
+
+  
+  <h4 class="about-subsection-title">Referee Services</h4>
+  
+  <p class="cv-prose">IEEE Access, Nature Communications, Chaos, Scientific Reports, Human Vaccines &amp; Immunotherapeutics</p>
+  
+  
+</section>
+
+      
+
+      
+    </div>
+  </div>
+</section>
+
+          </div>
+          
+          <aside class="sidebar-nav" aria-label="Site navigation">
+            <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="news/index.html"
+       >News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="about.html"
+       aria-current="page">About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+<div class="sidebar-theme">
+  <button type="button" id="theme-toggle" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+</div>
+          </aside>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="static/js/theme.js"></script>
+  <script src="static/js/site.js"></script>
+  
+
+
+<!-- Cloudflare Web Analytics -->
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b50843ba521349be9175c04115303ab0"}'></script>
+
+
+
+
+
+<!-- GoatCounter -->
+
+<script data-goatcounter="https://bukyoungjhun.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+
+  
+</body>
+</html>
