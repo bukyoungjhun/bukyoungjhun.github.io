@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var s = localStorage.getItem("theme");
+    var d =
+      s === "dark" ||
+      (!s &&
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+  } catch (e) {}
+})();
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lectures on Spatial Methods for Data Science at Goethe University — Bukyoung Jhun</title>
+  <meta name="description" content="Bukyoung Jhun&#39;s personal academic website">
+  <meta name="robots" content="index, follow">
+
+
+<link rel="canonical" href="https://bukyoungjhun.github.io/news/2026-10-spatial-methods-for-data-science/index.html">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bukyoung Jhun",
+  "alternateName": "전부경",
+  "url": "https://bukyoungjhun.github.io/",
+  "image": "https://bukyoungjhun.github.io/static/images/bukyoungjhun.png",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=5NXUxDIAAAAJ&hl=en",
+    "https://linkedin.com/in/bukyoung-jhun-859b332b4",
+    "https://bsky.app/profile/bukyoungjhun.bsky.social"
+  ]
+}
+</script>
+
+  
+
+
+  <link rel="icon" href="../../static/images/favicon.png" type="image/png">
+
+  <link rel="shortcut icon" href="../../static/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/site.css">
+  
+<style id="site-theme">
+:root,
+[data-theme="light"] {
+  --color-heading: #1a3d6d;
+  --color-accent: #1a3d6d;
+  --color-link: var(--color-heading);
+  --text: #333;
+  --text-muted: #898989;
+  --text-sub: #908e8b;
+  --link: var(--color-heading);
+  --bg-page: #ffffff;
+  --bg-footer: #eeeeee;
+  --bg-highlight: #f5f2ec;
+  --bg-input: #fafafa;
+  --bg-mobile-menu: #efefef;
+  --border: #d4d4d4;
+  --ham-color: #333;
+}
+
+[data-theme="dark"] {
+  --color-heading: #6ba3d8;
+  --color-accent: #6ba3d8;
+  --color-link: #8bb8e8;
+  --text: #c4c8cc;
+  --text-muted: #9aa0a6;
+  --text-sub: #959aa0;
+  --link: #8bb8e8;
+  --bg-page: #1e2126;
+  --bg-footer: #252a2f;
+  --bg-highlight: #2d3138;
+  --bg-input: #2d3138;
+  --bg-mobile-menu: #252a2f;
+  --border: #454a52;
+  --ham-color: #c4c8cc;
+}
+</style>
+  
+</head>
+<body class="">
+  <div class="mobile-menu-wrapper" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="../../news/index.html"
+       aria-current="page">News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../about.html"
+       >About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+      <div class="mobile-menu-toolbar">
+        
+        <button type="button" id="theme-toggle-mobile" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+        
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <header class="mobile-header" aria-label="Mobile navigation">
+    <div class="container mobile-header-inner">
+      <button class="menu-bar" id="menu-toggle" aria-label="Open menu" type="button">
+        <span class="ham"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wrapper" id="main-wrapper">
+    <main class="site-main">
+      <div class="container lab-vc-container">
+        
+        <div class="page-layout">
+          <div class="page-main">
+            
+<section class="page-section news-article">
+    <div class="page-heading">
+      <p class="breadcrumb"><a href="../../news/index.html">News</a></p>
+      <h2 class="head2">Lectures on Spatial Methods for Data Science at Goethe University</h2>
+      <p class="meta-line">2026-10-01</p>
+    </div>
+    <div class="content-body">
+      <p>I will be teaching a course on <strong>Spatial Methods for Data Science</strong> at Goethe University Frankfurt during the Winter semester of 2026/2027</p>
+<p><a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;publishid=430491&amp;moduleCall=webInfo&amp;publishConfFile=webInfo&amp;publishSubDir=veranstaltung">Course Catalog</a></p>
+<h2 id="course-description">Course description</h2>
+<p>Many systems of societal interest can be understood in terms of some notion of space, either physical or more abstract. Examples include geographic or urban systems embedded in physical space, political systems organized by ideological distance, and social relationships shaped by demographic and value similarity. Analyzing these kinds of systems often requires methods that use notions of similarity, distance, or latent space to uncover hidden patterns.</p>
+<p>This course provides an interdisciplinary introduction to spatial approaches to data analysis and is aimed at students from a range of quantitative and social science disciplines. The first part of the course focuses on methods for analyzing systems embedded in physical space, including how nearby locations influence one another, how interactions and flows emerge across space, and how spatial patterns can be modeled and interpreted. The second part of the course moves from physical space to more abstract notions of similarity and latent structure, introducing approaches such as dimensionality reduction, embeddings, latent space models, and network geometry. The course will combine lectures on core concepts and methods with practical programming exercises and discussion of selected applications and current research literature.</p>
+<h2 id="schedule">Schedule</h2>
+<h3 id="part-i-physical-spaces">Part I: Physical spaces</h3>
+<ul>
+<li><strong>Week 1: Introduction</strong></li>
+</ul>
+<p>Political, social, geographic, and urban systems. Distance, similarity, and neighbourhoods. Interaction and spatial dependence.</p>
+<ul>
+<li><strong>Week 2: Spatial data and spatial relationships</strong></li>
+</ul>
+<p>Point, areal, raster, flow, and network data. Spatial weights, contiguity, and nearest neighbours.</p>
+<ul>
+<li><strong>Week 3: Exploratory spatial data analysis</strong></li>
+</ul>
+<p>Spatial distributions and clustering. Spatial autocorrelation.</p>
+<ul>
+<li><strong>Week 4: Point patterns and spatial interaction</strong></li>
+</ul>
+<p>Point processes, spatial interaction, and flow systems.</p>
+<ul>
+<li><strong>Week 5: Spatial regression and areal dependence</strong></li>
+</ul>
+<p>Spatial regression models. Spatial lag and CAR models.</p>
+<ul>
+<li><strong>Week 6: Geostatistics and spatial prediction</strong></li>
+</ul>
+<p>Continuous spatial fields. Spatial interpolation. Gaussian process regression.</p>
+<ul>
+<li><strong>Week 7: Applications / Current literature</strong></li>
+</ul>
+<h3 id="part-ii-latent-spaces">Part II: Latent spaces</h3>
+<ul>
+<li><strong>Week 8: Introduction</strong></li>
+</ul>
+<p>Similarity, dissimilarity, and metric spaces. Kernels and latent geometry.</p>
+<ul>
+<li><strong>Week 9: Linear dimensionality reduction</strong></li>
+</ul>
+<p>Principal component analysis (PCA). Multidimensional scaling (MDS).</p>
+<ul>
+<li><strong>Week 10: Nonlinear dimensionality reduction and manifold learning</strong></li>
+</ul>
+<p>Isomap and locally linear embedding. Laplacian eigenmaps and diffusion maps. t-SNE and UMAP.</p>
+<ul>
+<li><strong>Week 11: Embeddings</strong></li>
+</ul>
+<p>Word, document, and node embeddings. Spatial partitioning and nearest-neighbour search.</p>
+<ul>
+<li><strong>Week 12: Latent space models</strong></li>
+</ul>
+<p>Latent position models. Distance-based relational structure.</p>
+<ul>
+<li><strong>Week 13: Spectral methods</strong></li>
+</ul>
+<p>Graph Laplacians and spectral embedding. Spectral clustering.</p>
+<ul>
+<li><strong>Week 14: Network geometry</strong></li>
+</ul>
+<p>Hidden metric spaces and similarity-based connection probabilities. Hyperbolic geometry.</p>
+<ul>
+<li><strong>Week 15: Applications / Current literature</strong></li>
+</ul>
+    </div>
+</section>
+
+          </div>
+          
+          <aside class="sidebar-nav" aria-label="Site navigation">
+            <ul class="menu sidebar-menu">
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../index.html"
+       >Home</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item current">
+    <a href="../../news/index.html"
+       aria-current="page">News</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../publications/index.html"
+       >Publications</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../about.html"
+       >About</a>
+    
+  </li>
+  
+  
+  
+  <li class="menu-item">
+    <a href="../../contact.html"
+       >Contact</a>
+    
+  </li>
+  
+</ul>
+<div class="sidebar-theme">
+  <button type="button" id="theme-toggle" class="theme-toggle"
+        onclick="toggleTheme()" aria-label="Switch to dark mode" title="Toggle dark mode">
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">🌙</span>
+</button>
+</div>
+          </aside>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../static/js/theme.js"></script>
+  <script src="../../static/js/site.js"></script>
+  
+
+
+<!-- Cloudflare Web Analytics -->
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b50843ba521349be9175c04115303ab0"}'></script>
+
+
+
+
+
+<!-- GoatCounter -->
+
+<script data-goatcounter="https://bukyoungjhun.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+
+  
+</body>
+</html>
